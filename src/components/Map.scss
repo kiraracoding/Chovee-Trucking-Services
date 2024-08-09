@@ -1,0 +1,247 @@
+@import '../assets/styles/variables';
+
+.map-page {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: calc(768px - 80px);
+    align-items: flex-end;
+}
+
+.map-txtdiv {
+    padding-left: 40px;
+    padding-bottom: 30vh;
+}
+
+.map-pagetitle {
+    color: $dark-burgundy-red;
+    font-family: 'Formula1 Display';
+    font-size: 32px;
+}
+
+.map-regions {
+    width: 360px;
+    color: $dark-burgundy-red;
+    font-family: 'Formula1 Display';
+    font-size: 14px;
+    line-height: 3;
+    padding-bottom: 100px;
+    cursor: pointer;
+    padding: 0;
+    list-style-type: none;
+
+    & li:hover {
+        filter: brightness(200%);
+    }
+}
+
+.map-container {
+    position: relative;
+}
+
+.map-img {
+    height: calc(768px - 80px);
+    width: fit-content;
+    display: block;
+    align-self: self-end;
+}
+
+.point-name {
+    position: absolute;
+    background-color: $dark-burgundy-red;
+    color: white;
+    font-family: 'Manrope';
+    font-size: 10px;
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+
+    &.point-1 { top: 86.7%; left: 85.1%; }
+    &.point-2 { top: 82.1%; left: 81.2%; }
+    &.point-3 { top: 78.9%; left: 74.3%; }
+    &.point-4 { top: 70%; left: 67.8%; }
+    &.point-5 { top: 68.8%; left: 55.0%; }
+    &.point-6 { top: 75.5%; left: 35.2%;}
+    &.point-7 { top: 69.3%; left: 32.9%; }
+    &.point-8 { top: 67.0%; left: 44.1%; }
+    &.point-9 { top: 57.9%; left: 36.5%; }
+    &.point-10 { top: 60.9%; left: 44.3%; }
+    &.point-11 { top: 55.5%; left: 27.2%; }
+    &.point-12 { top: 60.5%; left: 11.0%; }
+    &.point-13 { top: 55.5%; left: 11.1%; }
+    &.point-14 { top: 50.0%; left: 22.1%; }
+    &.point-15 { top: 49.0%; left: 2.4%; }
+    &.point-16 { top: 47.4%; left: 33.4%; }
+    &.point-17 { top: 43%; left: 4.5%; }
+    &.point-18 { top: 33.8%; left: 17.1%; }
+    &.point-19 { top: 32.8%; left: 40.4%; }
+    &.point-20 { top: 27.3%; left: 13.3%; }
+    &.point-21 { top: 20.3%; left: 52.8%;}
+    &.point-22 { top: 16.3%; left: 8.9%; }
+    &.point-23 { top: 8.0%; left: 11.2%; }
+    &.point-24 { top: 7.9%; left: 47.9%; }
+}
+
+.point-icon {
+    height: 26px;
+    width: 25px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+
+    &.point-1 { top: 86.7%; left: 81.1%; }
+    &.point-2 { top: 82.1%; left: 77.2%; }
+    &.point-3 { top: 78.9%; left: 70.3%; }
+    &.point-4 { top: 70%; left: 63.8%; }
+    &.point-5 { top: 68.8%; left: 51.0%; }
+    &.point-6 { top: 75.5%; left: 31.2%; }
+    &.point-7 { top: 69.3%; left: 29.4%; }
+    &.point-8 { top: 67.0%; left: 40.1%; }
+    &.point-9 { top: 61.9%; left: 34.5%; }
+    &.point-10 { top: 61.9%; left: 40.3%; }
+    &.point-11 { top: 59.5%; left: 27.2%; }
+    &.point-12 { top: 61.0%; left: 18.0%; }
+    &.point-13 { top: 56.3%; left: 21.1%; }
+    &.point-14 { top: 50.0%; left: 18.1%; }
+    &.point-15 { top: 49.0%; left: 11.4%; }
+    &.point-16 { top: 47.4%; left: 29.4%; }
+    &.point-17 { top: 43%; left: 15.5%; }
+    &.point-18 { top: 33.8%; left: 25.1%; }
+    &.point-19 { top: 32.8%; left: 36.4%; }
+    &.point-20 { top: 27.3%; left: 21.3%; }
+    &.point-21 { top: 20.3%; left: 48.8%; }
+    &.point-22 { top: 16.3%; left: 19.9%; }
+    &.point-23 { top: 8.0%; left: 24.2%; }
+    &.point-24 { top: 7.9%; left: 43.9%; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .map-page {
+        align-items: flex-end;
+        min-height: calc(768px - 80px);
+    }
+    
+    .map-txtdiv {
+        padding-left: 20px;
+        padding-bottom: 50vh;
+    }
+
+    .map-pagetitle {
+        font-size: 20px;
+    }
+
+    .map-regions {
+        width: 200px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .map-page {
+        align-items: flex-start;
+        flex-direction: column;
+        height: calc(170vh - 120px);
+        align-content: space-between;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 1100px;
+    }
+    
+    .map-txtdiv {
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .map-pagetitle {
+        font-size: 30px;
+        padding: 0;
+        text-align: center;
+        padding-top: 8vh;
+    }
+
+    .map-regions {
+        width: 500px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .point-name {
+        display: block;
+    }
+
+    .point-icon.visible {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .map-page {
+        align-items: flex-start;
+        flex-direction: column;
+        height: calc(170vh - 120px);
+        align-content: space-between;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .map-txtdiv {
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .map-pagetitle {
+        font-size: 30px;
+        padding: 0;
+        text-align: center;
+        padding-top: 8vh;
+    }
+
+    .map-regions {
+        width: 500px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .map-img {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .point-name {
+        display: block;
+    }
+
+    .point-icon.visible {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 736px) {
+
+}

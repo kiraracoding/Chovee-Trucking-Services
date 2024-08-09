@@ -1,0 +1,144 @@
+@import '../assets/styles/variables';
+
+
+.nav-div {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 99999;
+}
+
+.navbar-logo {
+    width: 170px;
+    height: 60px;
+}
+
+.navbar-logo:hover {
+    filter: brightness(110%);
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60vw;
+    align-items: center;
+}
+
+.nav-li {
+    list-style-type: none;
+    font-family: 'Formula1 Display';
+    font-size: 14px;
+    font-weight: bold;
+    color: $thunderbird-red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-li:hover {
+    filter:brightness(120%);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+}
+
+.hamburger-icon {
+    height: 45px;
+    width: 45px;
+    display:  none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-div {
+        justify-content: space-between;
+        width: 100vw;
+        align-self: center;
+    }
+
+    .navbar-logo {
+        padding-left: 3vw;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        cursor: pointer;
+        padding-right: 3vw;
+    }
+
+    .hamburger-icon:hover {
+        filter: brightness(120%);
+        scale: 1.05;
+    }
+
+    .nav-ul {
+        display: none;
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            position: fixed; /* stays in the viewport */
+            height: 93vh;
+            background-color: white;
+            width: 100%;
+            top: 80px;
+            transition: left 0.3 ease;
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+
+}
+
+@media (orientation: landscape) and (max-width: 736px) {
+    .nav-div {
+        justify-content: space-between;
+        width: 100vw;
+        align-self: center;
+    }
+
+    .navbar-logo {
+        padding-left: 3vw;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        cursor: pointer;
+        padding-right: 3vw;
+    }
+
+    .hamburger-icon:hover {
+        filter: brightness(120%);
+        scale: 1.05;
+    }
+
+    .nav-ul {
+        display: none;
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            position: fixed; /* stays in the viewport */
+            height: 93vh;
+            background-color: white;
+            width: 100%;
+            top: 80px;
+            transition: left 0.3 ease;
+            margin: 0;
+            padding: 0;
+            height: calc(100vh - 80px);
+        }
+
+    }
+}

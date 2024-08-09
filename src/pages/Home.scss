@@ -1,0 +1,1199 @@
+@import '../assets/styles/variables';
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Hero Page*/
+
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    min-height: 768px;
+}
+
+.hero-bg {
+    background-image: url(../assets/Images/HomeHero.png);
+    height: calc(100vh - 80px);
+    width: 100vw;
+    background-position: bottom center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    min-height: 768px;
+}
+
+.hero-slogan {
+    position: relative;
+    z-index: 9999;
+    padding-bottom: 100px;
+}
+
+.hero-truck {
+    height: 600px;
+    width: 600px;
+    position: relative;
+    top: 2vh;
+    right: 14vw;
+    z-index: 1;
+}
+
+.hero-headtxt {
+    font-family: 'Formula1 Display';
+    color: white;
+    font-size: 72px;
+    width: 60vw;
+    padding: 0;
+    margin: 0;
+    padding-left: 20vw;
+    z-index: 9999;
+    padding-bottom: 20px;
+}
+
+.hero-subtxt {
+    font-family: 'Manrope';
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+    width: 490px;
+    line-height: 2.5;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    padding-left: 20vw;
+}
+
+.hero-btn {
+    width: 200px;
+    height: 50px;
+    font-family: 'Manrope';
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: $dark-burgundy-red;
+    margin-bottom: 50px;
+    margin-left: 20vw;
+}
+
+.hero-btn:hover {
+    scale: 1.02;
+    filter: brightness(120%);
+}
+
+
+
+/* Service Summary Page */
+
+.service-summary-page {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    min-height: 768px;
+}
+
+.service-summary-div {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    min-height: 768px;
+}
+
+.service-summary-info {
+    color: black;
+}
+
+.service-title {
+    font-family: 'Formula1 Display';
+    font-size: 48px;
+    width: 200px;
+    color: $thunderbird-red;
+}
+
+.service-text1, .service-text2 {
+    font-family: 'Manrope';
+    font-size: 16px;
+    width: 420px;
+    letter-spacing: 1.1px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.service-button {
+    font-family: 'Manrope';
+    background-color: $dark-burgundy-red;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 200px;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+
+    &:hover {
+        filter: brightness(130%);
+    }
+}
+
+.service-summary-samples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8vw;
+}
+
+.service-set1, .service-set2 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.obj-card {
+    padding-right: 20px;
+}
+
+.obj-img {
+    height: 170px;
+    width: 230px;
+    padding-bottom: 10px;
+}
+
+.obj-title {
+    font-family: 'Formula1 Display';
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.obj-txt {
+    font-family: 'Manrope';
+    font-size: 11px;
+    width: 230px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+
+
+/* Iconography Page */
+
+.icon-div {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    min-height: 768px;
+}
+
+.icon-titlediv {
+    display: flex;
+    height: 150px;;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iconpage-title {
+    font-family: 'Formula1 Display';
+    font-weight: 200;
+    color: $thunderbird-red;
+    padding: 0;
+    margin: 0;
+    font-size: 56px;
+    letter-spacing: 2px;
+}
+
+.icon-box {
+    background-color: $thunderbird-red;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 550px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+#icon-card3, #icon-card4 {
+    margin-top: 10px;
+}
+
+.icon-img {
+    height: 80px;
+    width: 80px;
+    padding-bottom: 40px;
+}
+
+.icon-title {
+    font-family: 'Formula1 Display';
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.icon-txt {
+    font-family: 'Manrope';
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 225px;
+    padding: 0;
+    margin: 0;
+    color: white;
+
+}
+
+
+
+/* Review Page */
+.review-page {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: calc(768px - 80px);
+}
+
+.reviewpage-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewpage-title {
+    font-family: 'Formula1 Display';
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 56px;
+    padding: 0;
+    margin: 0;
+    color: $thunderbird-red;
+    width: 1000px;
+}
+
+.reviewpage-txt {
+    font-family: 'Manrope';
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: left;
+    width: 1000px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.reviewcard-box {
+    display: flex;
+    justify-content: center;
+}
+
+.review-card {
+    width: 320px;
+    height: 450px;
+    background-color: $thunderbird-red;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.review-txt {
+    font-family: 'Formula1 Display';
+    font-weight: 800;
+    color: white;
+    padding: 30px;
+    line-height: 2;
+}
+
+.review-name {
+    font-family: 'Formula1 Display';
+    font-weight: 200;
+    padding-left: 30px;
+    color: white;
+}
+
+
+
+/* Slogan Page */
+.slogan-bg {
+    background-image: url(../assets/Images/SloganImg.png);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-txt {
+    font-family: 'Formula1 Display';
+    color: white;
+    letter-spacing: 2px;
+    font-size: 56px;
+    line-height: 1.5;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    /* Hero Page*/
+    .hero-div {
+        min-height: calc(768px - 80px);
+    }
+
+    .hero-bg {
+        min-height: calc(768px - 80px);
+    }
+
+    .hero-headtxt {
+        font-size: 50px;
+    }
+
+    .hero-truck {
+        height: 400px;
+        width: 400px;
+    }
+
+    .hero-subtxt {
+        font-size: 8px;
+        width: 370px;
+    }
+
+    .hero-btn {
+        width: 150px;
+        font-size: 12px;
+        height: 40px;
+    }
+
+
+    /* Service Summary Page */
+    .service-summary-page {
+        min-height: 768px;
+    }
+
+    .service-summary-div {
+        min-height: 768px;
+    }
+
+    .service-title {
+        width: 200px;
+        font-size: 40px;
+    }
+
+    .service-text1, .service-text2 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .service-button {
+        width: 180px;
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .service-summary-samples {
+        padding-left: 5vw;
+    }
+
+    .obj-img {
+        height: 160px;
+        width: 190px;
+    }
+
+    .obj-title {
+        font-size: 16px;
+    }
+
+    .obj-txt {
+        width: 190px;
+        font-size: 10px;
+    }
+
+
+    /* Icon Page */
+    .icon-page {
+        min-height: calc(768px);
+    }
+
+    .iconpage-title {
+        font-size: 44px;
+    }
+
+    .icon-img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .icon-title {
+        font-size: 16px;
+    }
+
+    .icon-txt {
+        width: 170px;
+        font-size: 8px;
+    }
+
+
+
+    /* Review Page */
+    .review-page {
+        min-height: calc(768px);
+    }
+
+    .reviewpage-title {
+        font-size: 44px;
+        width: 750px;
+    }
+
+    .reviewpage-txt {
+        width: 750px;
+        font-size: 11px;
+    }
+
+    .review-card {
+        width: 240px;
+        height: 350px;
+    }
+
+    .review-txt {
+        font-size: 13px;
+        padding: 20px;
+    }
+
+    .review-name {
+        padding-left: 20px;
+    }
+
+    /* Slogan Page */
+    .slogan-txt {
+        font-size: 44px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    
+    .hero-div {
+        min-height: 640px;
+    }
+    
+    .hero-bg {
+        flex-direction: column;
+        height: 100vh;
+        min-height: 640px;
+    }
+
+    .hero-slogan {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .hero-headtxt {
+        font-size: 40px;
+        text-align: center;
+        width: 100vw;
+        padding-left: 0;
+    }
+
+    .hero-truck {
+        height: 300px;
+        width: 300px;
+        top: 0;
+        right: 0vw;
+    }
+
+    .hero-subtxt {
+        font-size: 8px;
+        text-align: center;
+        padding-left: 0;
+        width: 400px;
+
+    }
+
+    .hero-btn {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Service Summary Page */
+
+    .service-summary-page {
+        height: calc(200vh - 160px);
+        min-height: 1000px;
+        max-height: 1000px;
+    }
+
+    .service-summary-div {
+        height: calc(200vh - 160px);
+        min-height: 1000px;
+        max-height: 1000px;
+    }
+
+
+    .service-summary-div {
+        flex-direction: column;
+    }
+
+    .service-summary-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+    }
+
+    .service-title {
+        font-size: 27.3px;
+        width: 300px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .service-text1, .service-text2 {
+        font-size: 12px;
+        width: 420px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .service-button {
+        height: 40px;
+        width: 190px;
+    }
+
+    .service-summary-samples {
+        padding-top: 15vh;
+        padding-left: 0;
+    }
+
+    .obj-img {
+        height: 160px;
+        width: 190px;
+    }
+
+    .obj-title {
+        font-size: 16px;
+    }
+
+    .obj-txt {
+        width: 190px;
+        font-size: 10px;
+    }
+
+
+
+    /* Iconography Page */
+    .icon-div {
+        min-height: calc(640px - 80px);
+    }
+
+    .iconpage-title {
+        font-size: 30px;
+    }
+
+    .icon-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 0px;
+        min-height: 440px;
+    }
+
+    #icon-card1 {
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: end;
+    }
+
+    #icon-card2 {
+        grid-area: 1 / 2 / 2 / 3;
+        justify-self: start;
+    }
+
+    #icon-card3 {
+        grid-area: 2 / 1 / 3 / 2;
+        justify-self: end;
+    }
+
+    #icon-card4 {
+        grid-area: 2 / 2 / 3 / 3;
+        justify-self: start;
+    }
+
+    .icon-img {
+        height: 60px;
+        width: 60px;
+        padding-bottom: 20px;
+    }
+
+    .icon-title {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .icon-txt {
+        width: 160px;
+        font-size: 7px;
+    }
+
+    /* Review Page */
+    .review-page {
+        justify-content: center;
+        min-height: 640px;
+    }
+
+    .reviewpage-info {
+        padding-bottom: 8vh;
+    }
+
+    .reviewpage-title {
+        font-size: 30px;
+        width: 480px;
+    }
+
+    .reviewpage-txt {
+        width: 480px;
+        font-size: 9.5px;
+    }
+
+    .review-br {
+        display: none;
+    }
+
+    .review-card {
+        width: 145px;
+        height: 250px;
+    }
+
+    .review-txt {
+        font-size: 9.5px;
+        padding: 10px;
+    }
+
+    .review-name {
+        padding-left: 10px;
+        font-size: 9px;
+    }
+
+
+
+    /* Slogan Page */
+    .slogan-txt {
+        font-size: 33px;
+        padding-left: 20px;
+    }
+
+    .slogan-br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .hero-bg {
+        flex-direction: column;
+        height: 100vh;
+        min-height: 620px;
+    }
+
+    .hero-div {
+        min-height: 620px;
+    }
+
+    .hero-slogan {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .hero-headtxt {
+        font-size: 32px;
+        text-align: center;
+        width: 100vw;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-truck {
+        height: 300px;
+        width: 300px;
+        top: -7vw;
+        right: 0vw;
+    }
+
+    .hero-subtxt {
+        font-size: 7.5px;
+        text-align: center;
+        padding-left: 0;
+        width: 280px;
+        padding-bottom: 10px;
+        line-height: 15px;
+    }
+
+    .hero-btn {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        width: 140px;
+        height: 45px;
+    }
+
+
+    /* Service Summary Page */
+
+    .service-summary-page {
+        height: calc(200vh - 160px);
+        max-height: 1000px;
+    }
+
+    .service-summary-div {
+        height: calc(200vh - 160px);
+        justify-content: space-between;
+        min-height: 1060px;
+        max-height: 1070px;
+    }
+
+    .service-summary-div {
+        flex-direction: column;
+    }
+
+    .service-summary-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vh;
+    }
+
+    .service-title {
+        font-size: 36px;
+        width: 250px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .service-text1, .service-text2 {
+        font-size: 10px;
+        width: 320px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .service-button {
+        height: 40px;
+        width: 190px;
+    }
+
+    .service-summary-samples {
+        padding-left: 0;
+        padding-bottom: 10vh;
+    }
+
+    .obj-card {
+        padding-right: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #obj-card1, #obj-card2 {
+        padding-right: 20px;
+    }
+
+    .obj-img {
+        height: 130px;
+        width: 150px;
+        padding-bottom: 10px;
+    }
+
+    .obj-title {
+        font-size: 16px;
+    }
+
+    .obj-txt {
+        width: 150px;
+        font-size: 8px;
+        padding-bottom: 20px;
+    }
+
+
+
+    /* Iconography Page */
+
+    .iconpage-title {
+        font-size: 20px;
+    }
+
+    .icon-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+    }
+
+    #icon-card1 {
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: end;
+        align-self: end;
+    }
+
+    #icon-card2 {
+        grid-area: 1 / 2 / 2 / 3;
+        justify-self: start;
+        align-self: end;
+    }
+
+    #icon-card3 {
+        grid-area: 2 / 1 / 3 / 2;
+        justify-self: end;
+        align-self: start;
+    }
+
+    #icon-card4 {
+        grid-area: 2 / 2 / 3 / 3;
+        justify-self: start;
+        align-self: start;
+    }
+
+    .icon-img {
+        height: 50px;
+        width: 50px;
+        padding-bottom: 20px;
+    }
+
+    .icon-title {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .icon-txt {
+        width: 140px;
+        font-size: 6px;
+    }
+
+
+
+    /* Review Page */
+    .review-page {
+        justify-content: center;
+        height: calc(190vh - 160px);
+    }
+
+    .reviewpage-info {
+        padding-bottom: 20px;
+    }
+
+    .reviewpage-title {
+        font-size: 20px;
+        width: 330px;
+    }
+    
+    .reviewpage-txt {
+        width: 330px;
+        font-size: 7.5px;
+    }
+    
+    .review-br {
+        display: none;
+    }
+
+    .reviewcard-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .review-card {
+        width: 200px;
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .review-txt {
+        font-size: 10px;
+        padding: 20px;
+    }
+    
+    .review-name {
+        padding-left: 20px;
+        font-size: 9px;
+    }
+
+
+
+    /* Slogan Page */
+    .slogan-txt {
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    .slogan-br {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 736px) {
+    .hero-div {
+        min-height: 400px;
+    }
+    
+    .hero-bg {
+        flex-direction: row;
+        min-height: 350px;
+    }
+
+    .hero-slogan {
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .hero-truck {
+        height: 260px;
+        width: 250px;
+        top: -3vw;
+    }
+
+    .hero-headtxt {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        width: 400px;
+        padding-bottom: 20px;
+        align-self: self-start;
+    }
+
+    .head-break {
+        display: none;
+    }
+
+    .hero-subtxt {
+        font-size: 7.5px;
+        width: 300px;
+        text-align: left;
+        line-height: 12px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        align-self: self-start;
+    }
+
+    .hero-btn {
+        margin-bottom: 25vh;
+        font-size: 10px;
+        width: 140px;
+        height: 45px;
+        align-self: flex-start;
+
+    }
+
+    /* Service Summary Page */
+
+    .service-summary-page {
+        height: calc(200vh - 160px);
+        min-height: 550px;
+        max-height: 800px;
+    }
+
+    .service-summary-div {
+        height: calc(200vh - 160px);
+        justify-content: space-between;
+        min-height: 550px;
+        max-height: 800px;
+    }
+
+    .service-summary-div {
+        flex-direction: column;
+    }
+
+    .service-summary-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20vh;
+    }
+
+    .service-title {
+        font-size: 28px;
+        width: 500px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .service-text1, .service-text2 {
+        font-size: 10px;
+        width: 550px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .service-button {
+        height: 40px;
+        width: 190px;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .service-set1 {
+        padding-right: 10px;
+    }
+
+    .service-summary-samples {
+        padding-left: 0;
+        flex-direction: row;
+        padding-bottom: 10vh;
+    }
+
+    .obj-card {
+        padding-right: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #obj-card1, #obj-card2 {
+        padding-right: 10px;
+    }
+
+    .obj-img {
+        height: 100px;
+        width: 150px;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .obj-title {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .obj-txt {
+        width: 150px;
+        font-size: 8px;
+        padding-bottom: 20px;
+    }
+
+
+
+    /* Iconography Page */
+    .iconpage-title {
+        font-size: 20px;
+    }
+    
+    .icon-box {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .icon-card {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .icon-img {
+        height: 40px;
+        width: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .icon-title {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    
+    .icon-txt {
+        width: 120px;
+        font-size: 6px;
+    }
+
+
+
+    /* Review Page */
+    .reviewpage-title {
+        font-size: 24px;
+        width: 630px;
+    }
+
+    .reviewpage-txt {
+        width: 630px;
+        font-size: 7px;
+    }
+
+    .review-br {
+        display: flex;
+    }
+
+    .review-card {
+        width: 200px;
+        height: 120px;
+    }
+
+    .review-txt {
+        font-size: 8px;
+        padding: 5px;
+    }
+
+    .review-name {
+        padding-left: 5px;
+        font-size: 6.5px;
+    }
+
+
+
+    /* Slogan Page */
+    .slogan-txt {
+        font-size: 32px;
+        padding-left: 20px;
+        line-height: 1.3;
+    }
+
+    .slogan-br {
+        display: none;
+    }
+}

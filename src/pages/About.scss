@@ -1,0 +1,634 @@
+@import '../assets/styles/variables';
+
+/* Hero Page */
+
+.aboutpage-div {
+    padding-top: 80px;
+}
+
+.services-hero-bg {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    background-color: black;
+    min-height: calc(768px - 80px);
+}
+
+.video-div {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    min-height: calc(768px - 80px);
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: calc(100vh - 80px);
+    width: 100vw;
+    object-fit: cover;
+    opacity: 20%;
+    min-height: calc(768px - 80px);
+    z-index: 1;
+}
+
+.about-slogandiv {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100vw;
+}
+
+.services-hero-slogan {
+    position: absolute;
+    left: 5vw;
+    font-family: 'Formula1 Display';
+    font-size: 70px;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    min-height: calc(768px - 80px);
+}
+
+
+
+/* About Us Info Page */
+
+.about-div {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: $dark-burgundy-red;
+    justify-content: space-evenly;
+    min-height: calc(768px - 80px);
+}
+
+.aboutinfo-gendiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.aboutinfo-div {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+}
+
+.about-logo {
+    height: 150px;
+    width: 350px;
+    padding-bottom: 20px;
+}
+
+.about-txt {
+    font-family: 'Manrope';
+    color: white;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.about-operatordiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.operator-img {
+    width: 300px;
+    height: 350px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+.operator-name {
+    font-family: "Formula1 Display";
+    color: white;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+.operator-position {
+    font-family: "Manrope";
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 200;
+    padding-left: 50px;
+}
+
+
+
+/* Objective Page */
+
+.objective-page {
+    height: calc(260vh - 240px);
+    width: 100vw;
+    background-image: url(../assets/Images/ObjectivePageBg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 1680px;
+}
+
+.objective-div {
+    height: calc(250vh - 240px);
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 1680px;
+}
+
+.objective-page-title {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Formula1 Display';
+    font-size: 48px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+.objective-card {
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    width: 950px;
+}
+
+.objective-img {
+    width: 300px;
+    height: 210px;
+    background-position: center;
+    background-size: cover;
+}
+
+.objective-txtdiv {
+    width: 500px;
+    padding-left: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.objective-title {
+    font-family: 'Formula1 Display';
+    color: $thunderbird-red;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.objective-txt {
+    font-family: 'Manrope';
+    color: $thunderbird-red;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Hero Page */
+    .about-slogandiv {
+        top: 20%;
+    }
+
+    .services-hero-slogan {
+        font-size: 54px;
+        min-height: calc(768px - 80px);
+    }
+
+    /* About Us Info Page */
+    .aboutinfo-div {
+        width: 450px;
+    }
+
+    .about-logo {
+        height: 120px;
+        width: 300px;
+    }
+
+    .about-txt {
+        font-size: 12px;
+    }
+
+    .operator-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .operator-name {
+        font-size: 16px;
+    }
+
+    .operator-position {
+        font-size: 14px;
+    }
+
+    /* Objective Page */
+    .objective-card {
+        width: 700px;
+    }
+
+    .objective-img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .objective-txtdiv {
+        padding-left: 30px;
+        width: 450px;
+    }
+
+    .objective-title {
+        font-size: 16px;
+    }
+
+    .objective-txt {
+        font-size: 10px;
+        letter-spacing: 1px;;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    /* Hero Page */
+    .about-slogandiv {
+        top: 30%;
+    }
+
+    .services-hero-bg {
+        min-height: calc(640px - 80px);
+    }
+
+    .video-div {
+        min-height: calc(640px - 80px);
+    }
+
+    .background-video {
+        min-height: calc(640px - 80px);
+    }
+
+    .services-hero-slogan {
+        font-size: 35px;
+        min-height: calc(640px - 80px);
+    }
+
+    /* About Us Info Page */
+    .about-div {
+        height: calc(160vh - 120px);
+        min-height: calc(800px - 80px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .aboutinfo-gendiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: calc(160vh - 120px);
+        min-height: calc(800px - 80px);
+    }
+
+    .aboutinfo-div {
+        width: 80vw;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .about-logo {
+        height: 120px;
+        width: 300px;
+    }
+
+    .about-txt {
+        font-size: 10px;
+        width: 400px;
+    }
+
+    .operator-img {
+        width: 150px;
+        height: 200px;
+        padding-left: 0;
+    }
+
+    .operator-name {
+        font-size: 16px;
+        font-size: 12px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+
+    .operator-position {
+        font-size: 10px;
+        padding-left: 0px;
+    }
+
+    /* Objective Page */
+    .objective-page {
+        min-height: calc(1450px - 80px);
+    }
+
+    .objective-div {
+        min-height: calc(1450px - 80px);
+    }
+
+    .objective-page-title {
+        font-size: 32px;
+    }
+
+    .objective-card {
+        width: 460px;
+    }
+
+    .objective-img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .objective-txtdiv {
+        padding-left: 10px;
+        width: 450px;
+    }
+
+    .objective-title {
+        font-size: 16px;
+    }
+
+    .objective-txt {
+        font-size: 8px;
+        line-height: 1.2;
+        letter-spacing: 1px;;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+    
+    /* Hero Page */
+     .about-slogandiv {
+        top: 35%;
+    }
+
+    .services-hero-slogan {
+        font-size: 28px;
+        min-height: calc(640px - 80px);
+        letter-spacing: 0;
+    }
+
+    /* About Us Info Page */
+    .about-div {
+        height: calc(160vh - 120px);
+        min-height: calc(800px - 80px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .aboutinfo-gendiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: calc(160vh - 120px);
+        min-height: calc(800px - 80px);
+    }
+
+    .aboutinfo-div {
+        width: 80vw;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .about-logo {
+        height: 120px;
+        width: 300px;
+        padding-bottom: 20px;
+    }
+
+    .about-txt {
+        font-size: 8px;
+        width: 300px;
+    }
+
+    .operator-img {
+        width: 150px;
+        height: 200px;
+        padding-left: 0;
+    }
+
+    .operator-name {
+        font-size: 16px;
+        font-size: 12px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+
+    .operator-position {
+        font-size: 10px;
+        padding-left: 0px;
+    }
+
+    /* Objective Page */
+    .objective-page {
+        min-height: calc(1450px - 80px);
+    }
+
+    .objective-div {
+        min-height: calc(1450px - 80px);
+    }
+
+    .objective-page-title {
+        font-size: 32px;
+    }
+
+    .objective-card {
+        width: 460px;
+    }
+
+    .objective-img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .objective-txtdiv {
+        padding-left: 10px;
+        width: 450px;
+    }
+
+    .objective-title {
+        font-size: 16px;
+    }
+
+    .objective-txt {
+        font-size: 8px;
+        line-height: 1.2;
+        letter-spacing: 1px;;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 736px) {
+    /* Hero Page */
+    
+    .about-slogandiv {
+        top: 35%;
+    }
+
+    .services-hero-bg {
+        min-height: 200px;
+    }
+
+    .video-div {
+        min-height: 200px;
+    }
+
+    .background-video {
+        min-height: 200px;
+
+    }
+
+    .about-slogandiv {
+        top: 55%;
+        min-height: 200px;
+
+    }
+
+    .services-hero-slogan {
+        font-size: 28px;
+        min-height: calc(640px - 80px);
+        letter-spacing: 0;
+    }
+
+
+
+    /* About Us Info Page */
+    .about-div {
+        height: calc(100vh - 80px);
+        width: 100vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+        min-height: 200px;
+    }
+
+    .aboutinfo-gendiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: calc(100vh - 80px);
+        min-height: 200px;
+        width: 100vw;
+    }
+
+    .aboutinfo-div {
+        width: 400px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 80px);
+        min-height: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-logo {
+        height: 80px;
+        width: 200px;
+        padding-bottom: 0px;
+        align-self: self-start;
+    }
+
+    .about-txt {
+        font-size: 6px;
+        width: 400px;
+    }
+
+    .about-operatordiv {
+        padding: 0;
+        margin: 0;
+        min-height: none;
+        height: calc(100vh - 80px);
+    }
+
+    .operator-img {
+        width: 120px;
+        height: 150px;
+        padding-left: 0;
+    }
+
+    .operator-name {
+        font-size: 16px;
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .operator-position {
+        font-size: 10px;
+    }
+
+    /* Objective Page */
+    .objective-page {
+        min-height: calc(1450px - 80px);
+    }
+
+    .objective-div {
+        min-height: calc(1450px - 80px);
+    }
+
+    .objective-page-title {
+        font-size: 32px;
+    }
+
+    .objective-card {
+        width: 460px;
+    }
+
+    .objective-img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .objective-txtdiv {
+        padding-left: 10px;
+        width: 450px;
+    }
+
+    .objective-title {
+        font-size: 16px;
+    }
+
+    .objective-txt {
+        font-size: 8px;
+        line-height: 1.2;
+        letter-spacing: 1px;;
+    }
+}
+

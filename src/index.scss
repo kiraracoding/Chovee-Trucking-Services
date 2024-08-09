@@ -1,0 +1,14 @@
+@import './assets/styles/_fonts';
+@import './assets/styles/variables';
+@import './assets/styles/mixins';
+
+
+:root {
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+}
+

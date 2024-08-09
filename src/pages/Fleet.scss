@@ -1,0 +1,394 @@
+@import '../assets/styles/variables';
+
+.fleetpage-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.truck-page {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(768px - 80px);
+}
+
+.wingvan-page {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(768px - 80px);
+}
+
+.closedvan-page {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(768px - 80px);
+}
+
+.fleet-bg {
+    width: 40vw;
+    height: calc(100vh - 80px);
+    position: relative;
+    min-height: 688px;
+
+    &.wingvan {
+        left: 60vw;
+        z-index: 1;
+    }
+}
+
+.truck-img1 {
+    height: 80vh;
+    position: absolute;
+    right: 45%;
+    min-height: 616px;
+}
+
+.truck-img2 {
+    height: 80vh;
+    z-index: 2;
+    position: absolute;
+    left: 45%;
+    min-height: 610px;
+}
+
+.truck-img3 {
+    height: 65vh;
+    position: absolute;
+    right: 40%;
+    min-height: 500px;
+}
+
+.fleet-txtdiv {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20vw;
+    padding-bottom: 50px;
+
+    &.wingvan {
+        position: relative;
+        right: 40vw;
+    }
+
+    &.closed-van {
+        position: relative;
+        left: 5%;
+    }
+}
+
+.fleetpage-title {
+    font-family: 'Formula1 Display';
+    color: $dark-burgundy-red;
+    font-size: 48px;
+    width: 200px;
+
+}
+
+.fleet-infotxt {
+    font-family: 'Formula1 Display';
+    color: $dark-burgundy-red;
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.fleet-btn {
+    background-color: $dark-burgundy-red;
+    color: white;
+    font-family: 'Manrope';
+    letter-spacing: 1.5px;
+    border: 0;
+    height: 50px;
+    width: 200px;
+
+    &:hover {
+        filter: brightness(150%);
+        scale: 105%;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .truck-img1 {
+        height: 75vh;
+        right: 35%;
+        min-height: 575px;
+    }
+
+    .truck-img2 {
+        height: 70vh;
+        min-height: 538px;
+        left: 35%
+    }
+
+    .truck-img3 {
+        height: 60vh;
+        right: 18%;
+        min-height: 500px;
+    }
+    
+    .fleet-txtdiv {
+        padding-right: 5vw;
+
+        &.wingvan {
+            right: 50vw;
+        }
+
+        &.closed-van {
+            left: 0%;
+        }
+    }
+    
+    .fleetpage-title {
+        width: 150px;
+        font-size: 40px;
+    }
+
+    .fleet-infotxt {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .truck-page {
+        min-height: calc(640px - 80px);
+        max-height: calc(768px - 80px);
+    }
+
+    .wingvan-page {
+        min-height: calc(640px - 80px);
+        max-height: calc(768px - 80px);
+    }
+
+    .closedvan-page {
+        min-height: calc(640px - 80px);
+        max-height: calc(768px - 80px);
+    }
+
+    .fleet-bg {
+        min-height: calc(640px - 80px);
+        max-height: calc(768px - 80px);
+    }
+
+    .truck-img1 {
+        height: 45vh;
+        min-height: 350px;
+        right: 38%;
+        max-height: 350px;
+    }
+
+    .truck-img2 {
+        height: 45vh;
+        min-height: 350px;
+        left: 40%;
+        max-height: 350px;
+    }
+
+    .truck-img3 {
+        height: 30vh;
+        min-height: 300px;
+        right: 25%;
+        max-height: 300px;
+    }
+
+    .fleet-txtdiv {
+        padding-right: 5vw;
+
+        &.wingvan {
+            right: 45vw;
+        }
+
+        &.closed-van {
+            left: 0%;
+        }
+    }
+
+    .fleetpage-title {
+        font-size: 28px;
+        width: 150px;
+    }
+
+    .fleet-infotxt {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .fleet-btn {
+        font-size: 12px;
+        height: 45px;
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    .truck-page {
+        min-height: 0;
+        max-height: none;
+    }
+
+    .wingvan-page {
+        min-height: 0;
+        max-height: none;
+    }
+
+    .closedvan-page {
+        min-height: 0;
+        max-height: none;
+    }
+
+    .fleet-bg {
+        min-height: 0;
+        max-height: none;
+    }
+
+    .truck-img1 {
+        height: 45vh;
+        min-height: 300px;
+        right: 5%;
+        max-height: 300px;
+        bottom: 0%;
+    }
+
+    .truck-img2 {
+        height: 45vh;
+        min-height: 300px;
+        left: 10%;
+        max-height: 300px;
+        bottom: -85%;
+    }
+
+    .truck-img3 {
+        height: 30vh;
+        min-height: 300px;
+        right: -30%;
+        max-height: 300px;
+        bottom: -172%;
+    }
+
+    .fleet-br {
+        display: none;
+    }
+
+    .fleet-txtdiv {
+        padding-right: 12vw;
+        padding-bottom: 80%;
+
+        &.wingvan {
+            right: 25vw;
+        }
+
+        &.closed-van {
+            left: 0%;
+        }
+    }
+
+    .fleetpage-title {
+        font-size: 20px;
+        width: 150px;
+    }
+
+    .fleet-infotxt {
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+
+    .fleet-btn {
+        font-size: 10px;
+        height: 40px;
+        width: 140px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 736px) {
+    .truck-page {
+        min-height: 0;
+        max-height: none;
+    }
+
+    .wingvan-page {
+        min-height: 0;
+        max-height: none;
+    }
+
+    .closedvan-page {
+        min-height: 0;
+        max-height: none;
+    }
+
+    .fleet-bg {
+        min-height: 0;
+        max-height: none;
+    }
+    
+    .truck-img1 {
+        height: 35vh;
+        min-height: 250px;
+        right: 40%;
+        max-height: 250px;
+    }
+
+    .truck-img2 {
+        height: 35vh;
+        min-height: 250px;
+        left: 45%;
+        max-height: 300px;
+    }
+
+    .truck-img3 {
+        height: 25vh;
+        min-height: 200px;
+        right: 35%;
+        max-height: 200px;
+    }
+
+    .fleet-br {
+        display: none;
+    }
+
+    .truck-page {
+        justify-content: space-around;
+    }
+
+    .fleet-txtdiv {
+        right: 40%;
+
+        &.wingvan {
+            right: 50vw;
+            top: 5%;
+        }
+
+        &.closed-van {
+            left: -15%;
+            top: 5%;
+        }
+    }
+
+    .fleetpage-title {
+        font-size: 20px;
+        width: 150px;
+        padding-top: 10px;
+    }
+
+    .fleet-infotxt {
+        font-size: 10px;
+        padding-bottom: 10px;
+        width: 150px;
+    }
+
+    .fleet-btn {
+        font-size: 10px;
+        height: 40px;
+        width: 140px;
+    }
+
+}
