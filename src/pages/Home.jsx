@@ -1,6 +1,7 @@
 import './Home.scss';
 import NavBar from '../components/NavBar.jsx';
 import Footer from '../components/Footer.jsx';
+import { Navigate, useNavigate } from 'react-router-dom';
 import HeroTruck from '../assets/Images/HeroTruck.png';
 import Objective1 from '../assets/Images/Objective1.jpg';
 import Objective2 from '../assets/Images/Objective2.jpg';
@@ -13,6 +14,10 @@ import IconImg4 from '../assets/Icons/IconImg4.png';
 
 
 function Home() {
+
+    const handleGetQuote = () => {
+        Navigate('/contact');
+    };
 
     return(
         <div className='homepage-div'>
@@ -30,7 +35,7 @@ function Home() {
                             AND EFFICIENTLY, EVERYTIME. WHETHER IT'S LOCAL OR LONG-HAUL, 
                             WE DELIVER WITH PRECISION AND CARE
                         </p>
-                        <button className='hero-btn'>GET A QUOTE</button>
+                        <button className='hero-btn' onClick={handleGetQuote}>GET A QUOTE</button>
                     </div>
                     <img className='hero-truck' src={HeroTruck}></img>
                 </div>
