@@ -1,7 +1,6 @@
 import './Home.scss';
 import NavBar from '../components/NavBar.jsx';
 import Footer from '../components/Footer.jsx';
-import { Navigate, useNavigate } from 'react-router-dom';
 import HeroTruck from '../assets/Images/HeroTruck.png';
 import Objective1 from '../assets/Images/Objective1.jpg';
 import Objective2 from '../assets/Images/Objective2.jpg';
@@ -11,12 +10,19 @@ import IconImg1 from '../assets/Icons/IconImg1.png';
 import IconImg2 from '../assets/Icons/IconImg2.png';
 import IconImg3 from '../assets/Icons/IconImg3.png';
 import IconImg4 from '../assets/Icons/IconImg4.png';
+import {useNavigate} from 'react-router-dom';
 
 
 function Home() {
 
+    const navigate = useNavigate();
+
     const handleGetQuote = () => {
-        Navigate('/contact');
+        navigate('/contact', {state: {scrollTo: 'quote-section'} });
+    };
+
+    const handleLearnMore = () => {
+        navigate('/about', {state: {scrollTo: 'objective-section'} });
     };
 
     return(
@@ -53,7 +59,7 @@ function Home() {
                             WITH A MODERN FLEET AND EXPERIENCED STAFF,
                             WE ENSURE TIMELY AND SAFE DELIVERY OF YOUR GOODS.
                         </p>
-                        <button className='service-button'>LEARN MORE</button>
+                        <button className='service-button' onClick={handleLearnMore}>LEARN MORE</button>
                     </div>
                     <div className='service-summary-samples'>
                         <div className='service-set1'>

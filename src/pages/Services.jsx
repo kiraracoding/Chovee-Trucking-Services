@@ -3,9 +3,14 @@ import NavBar from '../components/NavBar.jsx';
 import Footer from '../components/Footer.jsx';
 import ServicesImg from '../assets/Images/ServicesImg.jpg';
 import Map from '../components/Map.jsx';
+import { useNavigate } from 'react-router-dom';
 
 function Services () {
-    
+    const navigate = useNavigate();
+
+    const handleViewFleet = () => {
+        navigate('/fleet');
+    };
 
     return(
         <>
@@ -26,7 +31,7 @@ function Services () {
                         DELIVERING THEM STRAIGHT TO YOUR WAREHOUSE OR TRANSPORTING EXPORT CARGOES FROM 
                         YOUR WAREHOUSE TO THE LOCAL PORT.
                     </p>
-                    <button className='services-btn'>VIEW ALL FLEET</button>
+                    <button className='services-btn' onClick={handleViewFleet}>VIEW ALL FLEET</button>
                 </div>
             </div>
         </div>

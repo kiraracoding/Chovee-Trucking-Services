@@ -7,10 +7,15 @@ import FleetBg3 from '../assets/Images/FleetBg3.png';
 import Truck1 from '../assets/Images/Truck1.png';
 import Truck2 from '../assets/Images/Truck2.png';
 import Truck3 from '../assets/Images/Truck3.png';
+import { useNavigate } from 'react-router-dom';
 
 
 function Fleet () {
-    
+    const navigate = useNavigate();
+
+    const handleBookVehicle = () => {
+        navigate('/contact', {state: {scrollTo: 'quote-section'}});
+    };
 
     return(
         <>
@@ -29,7 +34,7 @@ function Fleet () {
                         CAPACITY GROSS WEIGHT: <br className='fleet-br'/>
                         18,000 KG
                     </p>
-                    <button className='fleet-btn'>BOOK THIS VEHICLE</button>
+                    <button className='fleet-btn' onClick={handleBookVehicle}>BOOK THIS VEHICLE</button>
                 </div>
             </div>
             <div className='wingvan-page'>
@@ -45,7 +50,7 @@ function Fleet () {
                         CAPACITY GROSS WEIGHT: <br className='fleet-br'/>
                         4,200 KG
                     </p>
-                    <button className='fleet-btn'>BOOK THIS VEHICLE</button>
+                    <button className='fleet-btn' onClick={handleBookVehicle}>BOOK THIS VEHICLE</button>
                 </div>
             </div>
             <div className='closedvan-page'>
@@ -61,7 +66,7 @@ function Fleet () {
                         CAPACITY GROSS WEIGHT: <br className='fleet-br'/>
                         3,800 KG
                     </p>
-                    <button className='fleet-btn'>BOOK THIS VEHICLE</button>
+                    <button className='fleet-btn' onClick={handleBookVehicle}>BOOK THIS VEHICLE</button>
                 </div>
             </div>
             <Footer/>

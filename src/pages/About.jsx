@@ -11,9 +11,24 @@ import Objective3 from '../assets/Images/Objective3.png';
 import Objective4 from '../assets/Images/Objective4.jpg';
 import Objective5 from '../assets/Images/Objective5.jpg';
 import Objective6 from '../assets/Images/Objective6.jpg';
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function About () {
-    
+    const location = useLocation();
+    const objectiveSectionRef = useRef(null);
+
+    useEffect(() => {
+        if (location.state?.scrollTo === 'objective-section' && objectiveSectionRef.current) {
+            const sectionTop = objectiveSectionRef.current.offsetTop;
+            const additionalOffset = 80;
+
+            window.scrollTo ({
+                top: sectionTop - additionalOffset,
+                behavior: 'smooth',
+            });
+        }
+    }, [location]);
 
     return(
         <>
@@ -62,7 +77,7 @@ function About () {
                     </div>
                 </div>
             </div>
-            <div className='objective-page'>
+            <div className='objective-page' ref={objectiveSectionRef}>
                 <div className='objective-div'>
                     <h1 className='objective-page-title'>OUR OBJECTIVES</h1>
                     <div className='objective-card'>

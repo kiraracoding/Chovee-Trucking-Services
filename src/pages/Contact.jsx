@@ -4,9 +4,38 @@ import NavBar from '../components/NavBar.jsx';
 import ContactImg from '../assets/Images/ContactImg.png';
 import FormImg from '../assets/Images/FormImg.jpg';
 import Footer from '../components/Footer.jsx';
+import { useEffect, useRef } from 'react';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 function Contact () {
+
+    const location = useLocation();
+    const quoteSectionRef = useRef(null);
+
+    useEffect(() => {
+        if (location.state?.scrollTo === 'quote-section' && quoteSectionRef.current) {
+            const sectionTop = quoteSectionRef.current.offsetTop;
+
+            const additionalOffset = 100;
+
+            window.scrollTo({
+                top: sectionTop - additionalOffset,
+                behavior: 'smooth',
+            });
+        }
+    }, [location]);
+
+    const [errorMessage, setErrorMessage] = useState(false);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setErrorMessage(true);
+        setTimeout(() => {
+            setErrorMessage(false);
+        }, 4000);
+    };
 
     return(
         <>
@@ -44,14 +73,14 @@ function Contact () {
                 <img className='contact-hero-img' src={ContactImg}/>
             </div>
         </div>
-        <div className='form-page'>
+        <div className='form-page' ref={quoteSectionRef}>
                 <img className='form-img' src={FormImg} />
                 <div className='form-page-div'>
                     <div className='form-heading'>
                         <h2 className='form-title'>GET A SERVICE QUOTE</h2>
                         <p className='form-instructions'>PLEASE COMPLETE THE FORM BELOW, WE WILL SEND THE REQUESTED QUOTE AND CONTACT YOU VIA EMAIL</p>
                     </div>
-                    <form className='form-div'>
+                    <form className='form-div' onSubmit={handleSubmit}>
                         <div className='form-top'>
                             <div className='form-left'>
                                 <div className='form-group'>
@@ -157,6 +186,11 @@ function Contact () {
                         </div>
                         <button className='submit-btn'>SUBMIT</button>
                     </form>
+                    {errorMessage && (
+                        <div className="error-popup">
+                            An error has occurred on our end. Please try again later.
+                        </div>
+                    )}
                 </div>
             </div>
             <Footer/>

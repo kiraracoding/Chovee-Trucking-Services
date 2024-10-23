@@ -5,6 +5,7 @@ import About from './pages/About.jsx';
 import  Services from './pages/Services.jsx';
 import Fleet from './pages/Fleet.jsx';
 import Contact from './pages/Contact.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
